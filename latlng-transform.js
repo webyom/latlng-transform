@@ -111,7 +111,7 @@
         lat = lat.lat || lat.latitude;
       }
     }
-    return {lat: lat, lng: lng};
+    return {lat: parseFloat(lat), lng: parseFloat(lng)};
   }
 
   function wgs2gcj(lat, lng) {
